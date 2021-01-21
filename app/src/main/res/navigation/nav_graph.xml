@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.mainfragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/homeworkFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.mainfragments.HomeworkFragment"
+        android:label="fragment_homework"
+        tools:layout="@layout/fragment_homework" />
+    <fragment
+        android:id="@+id/lessonsFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.mainfragments.LessonsFragment"
+        android:label="fragment_lessons"
+        tools:layout="@layout/fragment_lessons" />
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.mainfragments.ProjectsFragment"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_projects" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.mainfragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="tech.gamedev.hackeruonline.ui.fragments.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_to_homeFragment"
+        app:destination="@id/homeFragment" />
+</navigation>
